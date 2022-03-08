@@ -18,7 +18,13 @@ void boom(int xBoom, int yBoom){
 void bos(){
   for(int a=0; a<10; a++){
       for(int b=0; b<10; b++){
-      boom(b*20+150, a*10+150);
+    
+     
+       if(a%2==0){
+           boom(b*30+100, a*40+50);
+       }else{
+          boom(b*30+80, a*40+50);
      }
+  }
   }
 }
